@@ -28,9 +28,9 @@ int main() {
         freq[i] += freq[i - 1];
 
     // Step 3: Place the elements in the correct positions in the output array
-    vector<int> output(n);
-    for(int i = n - 1; i >= 0; i--) {
-        output[freq[val[i]] - 1] = val[i];
+    vector<int>output(n);
+    for(int i = 0; i<n; i++){
+        output[freq[val[i]]-1] = val[i];
         freq[val[i]]--;
     }
 
