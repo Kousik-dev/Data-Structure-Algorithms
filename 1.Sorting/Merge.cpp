@@ -26,6 +26,9 @@ void combine(vector<int> &a, int low, int mid, int high){
     for(int i = low ; i<=high; i++){
         a[i] = temp[i-low];
     }
+    for(int val: a)
+    cout<<val<<" ";
+    cout<<endl;
     
 
 }
